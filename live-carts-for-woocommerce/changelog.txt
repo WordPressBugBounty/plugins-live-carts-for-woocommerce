@@ -1,0 +1,208 @@
+= 2.1.1 2026-11-05 =
+- Added: Settings -> Integrations tab with an optional DocsBot integration. When enabled, the current cart ID is added to your private DocsBot widget's configuration, so it is logged in conversation history and can be used with the Live Carts skill. Requires the DocsBot plugin.
+- Improved: Clearer keyboard focus indicators in the table pagination and the BerryPress sidebar.
+- Fixed: REST API responses for carts containing a product variation failed. A variation's attributes now show its selected values plus the parent product's other visible attributes.
+- Fixed: Tooltips now also remove `javascript:` and `data:` URLs written with capital letters or embedded whitespace.
+
+= 2.1.0 2026-10-15 =
+- Added: REST API (`live-carts/v1`) for reading carts and shopper lists, including item contents, revision history, recovery URLs and email addresses. See the REST API documentation: https://berrypress.com/docs/live-carts-for-woocommerce/api/rest-api/
+- Added: Webhooks — subscribe one or more URLs to cart/list events (created, seen, items added/removed/updated, converted, abandoned). Each delivery is signed with HMAC-SHA256 (`X-Live-Carts-Signature`). Add, enable/disable, regenerate the secret of, and delete webhooks from Settings -> API.
+- Added: Settings -> API tab to enable the REST API and webhooks separately.
+- Fixed: possible fatal error when loading a cart whose stored items have no item key.
+- Fixed: changes to cart item meta were not always detected in the cart revision history.
+
+= 2.0.0 2026-10-03 =
+- New: Recovery Emails — send automated abandoned cart recovery emails directly from the plugin (BerryPress → Live Carts → Recovery Emails). Configure email templates, subjects, and send timing.
+- New: Visitor email tracking — capture the email address entered at checkout and associate it with the cart record, enabling recovery emails for guest visitors.
+- New: Settings redesigned with a tabbed layout (Tracking, Lifecycle, Display, Email) for easier navigation.
+- New: Email tab — configure a custom sender name and email address for recovery emails.
+- New: Cart email source setting — when a logged-in user's account email and a checkout email are both available, choose which one takes priority.
+- New: "Date Created" column in the carts and shopper lists tables.
+- New: Item counts shown in status filter tabs (All, Trash, etc.).
+- New: Filters button in the cart list (marked as Pro).
+- Improved: Admin UI — tooltips on settings fields, Pro badge on Pro-only fields, improved tab navigation.
+
+= 1.3.3 2026-09-22 =
+- Fix: missing styling for review notice
+
+= 1.3.2 2026-09-22 =
+- Added: Option to track only carts from logged-in users
+- Added: Option to mark carts as converted based on a custom order status
+- Added: WordPress.org review request notice
+- Updated: Tested up to WordPress 7.1 and WooCommerce 11.1.1
+- Improved: Minor admin styling improvements
+
+= 1.3.1 2026-07-21 =
+- Added: Trash, Restore, and Permanently Delete workflows for carts and shop lists.
+- Added: Optional "Recent Activity" sidebar on cart detail pages, showing recent orders and/or carts for logged-in users.
+- Added: Previous/Next navigation controls for carts and shop lists.
+- Improved: Dates and times now use the format and time zone configured in the WordPress settings.
+- Improved: Mobile layout, buttons, inputs, selects, and table pagination styling.
+- Improved: Sidebar behavior with a persisted collapsed state.
+- Fixed: Items-per-page settings and improved separation of Settings and Health Status updates.
+- Improved: Added more information to the debug output.
+- Fix: Improved order-to-cart tracking by linking newly created orders to their originating cart.
+
+= 1.3.0 2026-06-23 =
+- Add tracking for WooCommerce Shopper Lists (Wishlist and Save for Later). Requires WooCommerce 10.9+ with WooCommerce's experimental Shopper List features enabled. Live Carts monitors these lists in the admin; it is not a wishlist plugin.
+
+= 1.2.12 2026-06-22 =
+- Fix: Filtering carts by status in the admin now works correctly (resolved a conflict with the Status tab)
+- Minor admin styling improvements
+
+= 1.2.11 2026-05-21 =
+- Improvement: Don't update last seen URL on AJAX requests
+- Improvement: Mark carts as converted at order-creation time (including Blocks/Store API checkout), in addition to the existing order-status-change handler
+
+= 1.2.10 2026-05-12 =
+- Improvement: Use sessions to prevent processing converted cart until after cart is emptied
+- Add: Logs improvements: include URL
+
+= 1.2.9 2026-04-20 =
+- Show discount separately in admin cart view
+
+= 1.2.8 2026-03-14 =
+- New: Status & Diagnostics page: (Health checks for WordPress, PHP, and WooCommerce versions, database tables, migration status, cron schedule, and plugin directory permissions)
+- New: Re-run database migration directly from the Status page if it failed or is incomplete
+- New: Log level setting: "Errors only" or "All (verbose)" for detailed cart activity tracing
+- New: View log output directly in the admin (last 200 lines)
+- New: Download full debug log as a text file
+- New: "Clear log on save" option
+- New: Automatic log rotation at 1 MB
+- New: New: Cart ID shortcode - [berrypress_live_cart_id] — display the current visitor's cart ID anywhere on your site (e.g. contact/support pages)
+- New: New: IP address column (IP address is now shown in the carts list table - hidden when IP collection is disabled in Privacy settings)
+- Improvements: Debug log now includes verbose info-level entries for cart lifecycle events (loaded, created, updated, converted)
+- Improved migration error messages with actionable guidance
+
+= 1.2.7 2026-03-06 =
+- Fix: Re-release of version 1.2.6.
+
+= 1.2.6 2026-03-06 =
+- Add: Store meta fields in the meta field
+- Add: hook for Pro version to display meta fields
+- Improvement: revisions styling
+
+= 1.2.5 2026-02-06 =
+- Add: hooks for Pro version to hide external links, addons tab
+- Fix: Don't create contents items table on first setup
+- Fix: database migration and warnings
+
+= 1.2.4 2026-01-23 =
+- Fix: unschedule cron event on plugin deactivation
+- Fix: duplicated revisions are stored
+- Add: Limit of carts with revisions to 100 for performance
+- Miscellaneous improvement(s)
+
+= 1.2.3 2025-01-13 =
+- Fix migration for large tables
+
+= 1.2.2 2025-01-08 =
+- Move "Live Carts" menu item to BerryPress
+- Update Tested up to
+- Add new hooks for Pro version extensibility
+- Miscellaneous improvement(s)
+
+= 1.2.1 2025-12-27 =
+- Add: remove bulk action
+- Add: display cart revisions
+
+= 1.2.0 2025-12-19 =
+- Change the way carts data is stored to custom post type. (This is a significant change. We strongly recommend creating a full backup before updating.)
+- Live carts tracking improvements
+
+= 1.1.6 2025-12-10 =
+- Show the default category in the rules
+
+= 1.1.5 2025-11-1 =
+- Display product attributes in Cart items
+
+= 1.1.4 2025-10-21 =
+* Add - Settings hooks for Pro version extensibility (phplugins_live_carts_settings_general, phplugins_live_carts_save_settings)
+* Fix - Escape exception message in cart creation error
+* Fix - Add translator comment for placeholder in upgrade message
+* Changes to berrypress_admin_page_display_above_header hook
+
+= 1.1.3 =
+- Add addons tab
+- Update info about pro version
+- Update readme, assets
+
+= 1.1.2 =
+- Fix user link
+- Add a “Settings Page” link to the plugin list page
+
+= 1.1.1 =
+- Fix user links
+
+= 1.1.0 =
+- Redesign
+- Keep the user ID and IP address up to date to keep cart assigned if the user logs in
+- Don't allow viewing archived carts
+- Add product thumbnail to cart view
+
+= 1.0.12 =
+- Added one-time schema migration to change column type to TEXT for longer content.
+- Updated product link generation.
+
+= 1.0.11 =
+
+* Fix database error and issue with cart contents not updating
+
+= 1.0.10 =
+
+* Improve compatibility with woocommerce-paypal-payments plugin
+
+= 1.0.9 =
+
+* Fix PHP warnings when no cart exists
+* Database query improvement
+
+= 1.0.8 =
+
+* Add hooks to improve extensibility
+
+= 1.0.7 =
+
+* Fix fatal error after upgrade from version 1.0.5
+
+= 1.0.6 =
+
+* Add separate plugin settings page
+* Add option not to save site visitor IP addresses
+* Add feature to record the last frontend URL that the cart was seen on (can be disabled in plugin settings)
+* Add tracking of coupons in carts
+* Add color indicators to cart status column for quick status recognition
+* Add WooCommerce as plugin dependency
+
+= 1.0.5 =
+
+* Add additional permissions checks for admin functionality
+
+= 1.0.4 =
+
+* Fix: The admin stylesheet was not being loaded
+* Change cart IDs to be random instead of sequential
+* Display the cart ID in the cart details admin page
+* Add option to display the cart ID in the frontend (to make it easier to identify a specific customer cart in the backend)
+
+= 1.0.3 =
+
+* Fix: The cart value wasn't displaying in the carts list
+* Fix: Missing escaping on cart view page
+* Add a User column to the carts list
+* Hide the cart contents table on the cart view page when there are no contents to show
+
+= 1.0.2 =
+
+* Fix: Various Exceptions may not have been caught successfully
+* Add debug mode (enable under WooCommerce > Live Carts; the log is saved in this plugin's directory)
+* Add additional Exception and Error handling for 3 critical WooCommerce hooks
+
+= 1.0.1 =
+
+* Add Analytics functionality
+* Miscellaneous improvement(s)
+
+= 1.0.0 =
+
+* Initial release

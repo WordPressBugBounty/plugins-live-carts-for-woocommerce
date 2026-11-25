@@ -1,0 +1,1638 @@
+# Copyright (C) 2026 BerryPress
+# This file is distributed under the GPLv3+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Live Carts for WooCommerce: Track Active, Abandoned, and Converted Carts & Wishlists in Real Time! 2.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/live-carts-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-04T23:42:40+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: live-carts-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: live-carts-for-woocommerce.php
+msgid "Live Carts for WooCommerce: Track Active, Abandoned, and Converted Carts & Wishlists in Real Time!"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: live-carts-for-woocommerce.php
+msgid "https://berrypress.com/"
+msgstr ""
+
+#. Description of the plugin
+#: live-carts-for-woocommerce.php
+msgid "Track active, abandoned, and converted WooCommerce carts and wishlists (Wishlist, Save for Later) in real time from the WordPress admin"
+msgstr ""
+
+#. Author of the plugin
+#: live-carts-for-woocommerce.php
+#: includes/berrypress-admin-framework/Page.php:13
+#: includes/berrypress-admin-framework/Page.php:17
+msgid "BerryPress"
+msgstr ""
+
+#. translators: placeholders are link tags
+#: includes/admin-list.php:27
+#, php-format
+msgid "Shopper lists are currently disabled in WooCommerce settings. To start using this feature, go to %1$sWooCommerce > Settings > Advanced > Features%2$s and enable Wishlists and/or Save for Later in Cart. Shopper Lists are currently available only with block (Gutenberg) themes."
+msgstr ""
+
+#: includes/admin-list.php:49
+#: includes/admin-list.php:55
+msgid "All"
+msgstr ""
+
+#: includes/admin-list.php:50
+#: live-carts-for-woocommerce.php:725
+msgid "Trash"
+msgstr ""
+
+#. translators: %s = carts / lists
+#: includes/admin-list.php:97
+#, php-format
+msgid "Permanently delete all %s in the Trash? This cannot be undone."
+msgstr ""
+
+#: includes/admin-list.php:98
+msgid "lists"
+msgstr ""
+
+#: includes/admin-list.php:98
+msgid "carts"
+msgstr ""
+
+#: includes/admin-list.php:104
+msgid "Empty Trash"
+msgstr ""
+
+#: includes/admin-list.php:120
+msgid "Filters"
+msgstr ""
+
+#: includes/admin-list.php:121
+#: includes/admin-page.php:245
+#: includes/admin-page.php:319
+#: includes/admin-page.php:346
+#: includes/admin-page.php:354
+msgid "Pro"
+msgstr ""
+
+#: includes/admin-list.php:129
+msgid "List ID"
+msgstr ""
+
+#: includes/admin-list.php:130
+#: includes/admin-page.php:423
+msgid "Cart ID"
+msgstr ""
+
+#: includes/admin-list.php:132
+msgid "List Value"
+msgstr ""
+
+#: includes/admin-list.php:133
+msgid "Cart Value"
+msgstr ""
+
+#: includes/admin-list.php:135
+msgid "Select List"
+msgstr ""
+
+#: includes/admin-list.php:136
+msgid "Select Cart"
+msgstr ""
+
+#: includes/admin-list.php:141
+msgid "Created"
+msgstr ""
+
+#: includes/admin-list.php:145
+#: includes/admin-page.php:696
+#: includes/admin-page.php:950
+#: includes/admin-page.php:1594
+#: includes/admin-page.php:1680
+#: includes/api/class-webhooks.php:362
+#: includes/recovery-emails-admin-page.php:181
+#: includes/recovery-emails-admin-page.php:344
+msgid "Status"
+msgstr ""
+
+#: includes/admin-list.php:147
+#: includes/admin-page.php:941
+msgid "List Type"
+msgstr ""
+
+#: includes/admin-list.php:150
+#: includes/admin-page.php:982
+msgid "User"
+msgstr ""
+
+#: includes/admin-list.php:153
+msgid "IP Address"
+msgstr ""
+
+#: includes/admin-list.php:155
+msgid "Last Seen"
+msgstr ""
+
+#: includes/admin-list.php:158
+msgid "Coupon(s)"
+msgstr ""
+
+#: includes/admin-list.php:168
+msgid "Restore"
+msgstr ""
+
+#: includes/admin-list.php:169
+msgid "Delete permanently"
+msgstr ""
+
+#: includes/admin-list.php:174
+msgid "Move to Trash"
+msgstr ""
+
+#. translators: %s: list ID
+#: includes/admin-list.php:192
+#, php-format
+msgid "Select list %s"
+msgstr ""
+
+#. translators: %s: cart ID
+#: includes/admin-list.php:195
+#, php-format
+msgid "Select cart %s"
+msgstr ""
+
+#. translators: first %s is a timestamp, second %s is a URL
+#: includes/admin-list.php:351
+#: includes/admin-page.php:929
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#. translators: %s: customer email address
+#: includes/admin-list.php:378
+#, php-format
+msgid "Guest: %s"
+msgstr ""
+
+#: includes/admin-list.php:382
+msgid "Guest"
+msgstr ""
+
+#: includes/admin-list.php:412
+msgid "Search"
+msgstr ""
+
+#: includes/admin-page.php:136
+#: includes/admin-page.php:1657
+msgid "Shopper Lists"
+msgstr ""
+
+#: includes/admin-page.php:136
+#: includes/admin-page.php:1650
+#: includes/berrypress-admin-framework/addons-page.php:38
+#: includes/berrypress-admin-framework/addons-page.php:40
+#: live-carts-for-woocommerce.php:717
+msgid "Live Carts"
+msgstr ""
+
+#: includes/admin-page.php:171
+msgid "Search List ID"
+msgstr ""
+
+#: includes/admin-page.php:172
+msgid "Search Cart ID"
+msgstr ""
+
+#. translators: %s is the number of days (may be a decimal)
+#: includes/admin-page.php:182
+#, php-format
+msgid "Carts are removed from this page approximately %s days after they were last seen. Some cart data is retained in the database after this time."
+msgstr ""
+
+#: includes/admin-page.php:189
+msgid "To change this, upgrade to Pro."
+msgstr ""
+
+#: includes/admin-page.php:219
+msgid "Live Carts Settings"
+msgstr ""
+
+#: includes/admin-page.php:221
+msgid "Settings sections"
+msgstr ""
+
+#: includes/admin-page.php:222
+msgid "Tracking"
+msgstr ""
+
+#: includes/admin-page.php:223
+msgid "Lifecycle"
+msgstr ""
+
+#: includes/admin-page.php:224
+msgid "Display"
+msgstr ""
+
+#: includes/admin-page.php:225
+#: includes/admin-page.php:490
+#: includes/admin-page.php:991
+msgid "Email"
+msgstr ""
+
+#: includes/admin-page.php:226
+msgid "Integrations"
+msgstr ""
+
+#: includes/admin-page.php:227
+#: includes/admin-page.php:571
+msgid "API"
+msgstr ""
+
+#: includes/admin-page.php:238
+msgid "Cart data"
+msgstr ""
+
+#: includes/admin-page.php:244
+msgid "Enable cart revisions"
+msgstr ""
+
+#: includes/admin-page.php:246
+msgid "Keep a history of changes made to each cart."
+msgstr ""
+
+#: includes/admin-page.php:255
+msgid "Collect site visitors' IP addresses"
+msgstr ""
+
+#: includes/admin-page.php:263
+msgid "Collect visited URLs"
+msgstr ""
+
+#: includes/admin-page.php:272
+msgid "Track cart emails"
+msgstr ""
+
+#: includes/admin-page.php:273
+msgid "Track email addresses entered by shoppers at checkout. Enables cart recovery and customer identification for abandoned carts."
+msgstr ""
+
+#: includes/admin-page.php:279
+msgid "Cart email source"
+msgstr ""
+
+#: includes/admin-page.php:282
+msgid "User account email"
+msgstr ""
+
+#: includes/admin-page.php:283
+msgid "Email entered at checkout"
+msgstr ""
+
+#: includes/admin-page.php:285
+msgid "When a logged-in user's account email and an email entered at checkout are both available, which one to use."
+msgstr ""
+
+#: includes/admin-page.php:292
+msgid "Cart details"
+msgstr ""
+
+#: includes/admin-page.php:298
+msgid "Show recent orders on the cart detail page"
+msgstr ""
+
+#: includes/admin-page.php:305
+msgid "Exclude from tracking"
+msgstr ""
+
+#: includes/admin-page.php:311
+msgid "Guest visitors"
+msgstr ""
+
+#: includes/admin-page.php:318
+msgid "Users with role"
+msgstr ""
+
+#: includes/admin-page.php:338
+msgid "Cart lifecycle"
+msgstr ""
+
+#: includes/admin-page.php:342
+msgid "Mark carts as abandoned after"
+msgstr ""
+
+#: includes/admin-page.php:345
+msgid "hours"
+msgstr ""
+
+#: includes/admin-page.php:350
+msgid "Inactive cart is archived after"
+msgstr ""
+
+#: includes/admin-page.php:353
+msgid "days"
+msgstr ""
+
+#: includes/admin-page.php:362
+msgid "Conversion statuses"
+msgstr ""
+
+#: includes/admin-page.php:363
+msgid "Live Carts marks a cart as converted when its linked WooCommerce order reaches one of the configured order statuses. Change this setting if your carts are not marked as converted by default, or you are using custom order statuses."
+msgstr ""
+
+#. translators: %s: comma-separated list of automatically detected order statuses
+#: includes/admin-page.php:371
+#, php-format
+msgid "Currently the cart is marked as converted when the order reaches statuses: %s."
+msgstr ""
+
+#: includes/admin-page.php:379
+msgid "Choose order statuses manually"
+msgstr ""
+
+#: includes/admin-page.php:384
+msgid "Order statuses that mark a cart as converted"
+msgstr ""
+
+#: includes/admin-page.php:402
+msgid "Selecting Pending payment, Failed, or Cancelled may mark carts as converted before payment is accepted."
+msgstr ""
+
+#: includes/admin-page.php:424
+msgid "Note: It may be necessary to refresh the page after adding the first item to cart to see the cart ID. The setting automatically appends the cart ID to the WooCommerce cart page and mini-cart."
+msgstr ""
+
+#: includes/admin-page.php:428
+msgid "View documentation"
+msgstr ""
+
+#: includes/admin-page.php:429
+msgid "Cart ID documentation"
+msgstr ""
+
+#: includes/admin-page.php:436
+msgid "Show cart ID on the frontend"
+msgstr ""
+
+#: includes/admin-page.php:442
+msgid "Cart ID Shortcode"
+msgstr ""
+
+#: includes/admin-page.php:447
+msgid "Use this shortcode to display the current cart ID anywhere on your site (e.g. on a Contact Us or Support page)."
+msgstr ""
+
+#: includes/admin-page.php:453
+msgid "Copied!"
+msgstr ""
+
+#: includes/admin-page.php:454
+msgid "Copy"
+msgstr ""
+
+#: includes/admin-page.php:474
+msgid "Recovery email sender"
+msgstr ""
+
+#: includes/admin-page.php:481
+msgid "Name"
+msgstr ""
+
+#: includes/admin-page.php:499
+msgid "Leave empty to use the site name and admin email."
+msgstr ""
+
+#. translators: %s: link to Recovery Emails management page
+#: includes/admin-page.php:511
+#, php-format
+msgid "For guest visitors, enable \"Track cart emails\" on the Tracking tab. Recovery email sequences are managed separately. %s "
+msgstr ""
+
+#: includes/admin-page.php:512
+msgid "Manage recovery emails →"
+msgstr ""
+
+#: includes/admin-page.php:532
+msgid "DocsBot"
+msgstr ""
+
+#: includes/admin-page.php:533
+msgid "AI chatbot"
+msgstr ""
+
+#. translators: 1,2: open/close link to docsbot.ai; 3,4: open/close link to the DocsBot plugin on wordpress.org
+#: includes/admin-page.php:539
+#, php-format
+msgid "Use %1$sDocsBot%2$s to boost your sales by getting potential customers the answers they need, instantly. Once the %3$sDocsBot plugin%4$s is installed, enable this integration to include the current cart ID in your DocsBot widget configuration so it can be logged in conversation history and used with the Live Carts skill. Only works if your bot is private."
+msgstr ""
+
+#: includes/admin-page.php:551
+msgid "Enable DocsBot integration"
+msgstr ""
+
+#: includes/admin-page.php:561
+msgid "This page may contain affiliate links, from which BerryPress may earn a commission."
+msgstr ""
+
+#: includes/admin-page.php:577
+msgid "Enable REST API"
+msgstr ""
+
+#: includes/admin-page.php:584
+msgid "Enable webhooks"
+msgstr ""
+
+#: includes/admin-page.php:599
+msgid "Save Settings"
+msgstr ""
+
+#: includes/admin-page.php:612
+msgid "Plugin version"
+msgstr ""
+
+#: includes/admin-page.php:619
+msgid "WordPress version"
+msgstr ""
+
+#: includes/admin-page.php:625
+msgid "PHP version"
+msgstr ""
+
+#: includes/admin-page.php:631
+msgid "WooCommerce version"
+msgstr ""
+
+#: includes/admin-page.php:632
+msgid "Not active"
+msgstr ""
+
+#: includes/admin-page.php:638
+msgid "Cart conversion order statuses"
+msgstr ""
+
+#: includes/admin-page.php:639
+#: includes/admin-page.php:796
+msgid "None"
+msgstr ""
+
+#: includes/admin-page.php:643
+msgid "Cart conversion status source"
+msgstr ""
+
+#: includes/admin-page.php:644
+#: includes/admin-page.php:799
+msgid "Custom selection"
+msgstr ""
+
+#: includes/admin-page.php:644
+#: includes/admin-page.php:800
+msgid "WooCommerce automatic"
+msgstr ""
+
+#. translators: %s: database table name
+#: includes/admin-page.php:655
+#, php-format
+msgid "Table: %s"
+msgstr ""
+
+#. translators: %s: database table name
+#: includes/admin-page.php:656
+msgid "Exists"
+msgstr ""
+
+#. translators: %s: database table name
+#: includes/admin-page.php:656
+msgid "Missing"
+msgstr ""
+
+#: includes/admin-page.php:663
+msgid "Database migration (1.2.0)"
+msgstr ""
+
+#: includes/admin-page.php:664
+msgid "Incomplete"
+msgstr ""
+
+#: includes/admin-page.php:664
+msgid "Complete"
+msgstr ""
+
+#: includes/admin-page.php:671
+msgid "Total carts in database"
+msgstr ""
+
+#: includes/admin-page.php:678
+msgid "Scheduled tasks (WP Cron)"
+msgstr ""
+
+#. translators: %s: next run time
+#: includes/admin-page.php:680
+#, php-format
+msgid "Scheduled (next: %s)"
+msgstr ""
+
+#. translators: %s: next run time
+#: includes/admin-page.php:681
+msgid "Not scheduled"
+msgstr ""
+
+#: includes/admin-page.php:687
+msgid "Plugin directory writable"
+msgstr ""
+
+#: includes/admin-page.php:688
+msgid "Yes"
+msgstr ""
+
+#: includes/admin-page.php:688
+msgid "No"
+msgstr ""
+
+#: includes/admin-page.php:698
+msgid "Health Check"
+msgstr ""
+
+#: includes/admin-page.php:724
+msgid "Database migration completed successfully."
+msgstr ""
+
+#: includes/admin-page.php:737
+msgid "Migration failed with the following errors:"
+msgstr ""
+
+#: includes/admin-page.php:756
+msgid "The database migration has not completed. This may cause cart details to not display correctly."
+msgstr ""
+
+#: includes/admin-page.php:757
+msgid "Re-run migration"
+msgstr ""
+
+#: includes/admin-page.php:766
+msgid "Debug Log"
+msgstr ""
+
+#: includes/admin-page.php:775
+msgid "Enable debug mode"
+msgstr ""
+
+#: includes/admin-page.php:781
+msgid "Clear log on save"
+msgstr ""
+
+#: includes/admin-page.php:786
+msgid "Log level"
+msgstr ""
+
+#: includes/admin-page.php:788
+msgid "Errors only"
+msgstr ""
+
+#: includes/admin-page.php:789
+msgid "All (verbose)"
+msgstr ""
+
+#. translators: 1: comma-separated order statuses, 2: configuration source
+#: includes/admin-page.php:806
+#, php-format
+msgid "Effective conversion statuses: %1$s (source: %2$s). Verbose debug entries include conversion_statuses and conversion_source."
+msgstr ""
+
+#: includes/admin-page.php:820
+msgid "Log output"
+msgstr ""
+
+#: includes/admin-page.php:825
+msgid "Download full log"
+msgstr ""
+
+#: includes/admin-page.php:837
+#: includes/recovery-emails-admin-page.php:293
+msgid "Save"
+msgstr ""
+
+#: includes/admin-page.php:851
+msgid "Back to shopper lists"
+msgstr ""
+
+#: includes/admin-page.php:852
+msgid "Back to carts list"
+msgstr ""
+
+#: includes/admin-page.php:890
+msgid "List Not Found"
+msgstr ""
+
+#: includes/admin-page.php:890
+msgid "Cart Not Found"
+msgstr ""
+
+#. translators: %s is the list ID
+#: includes/admin-page.php:897
+#, php-format
+msgid "List #%s"
+msgstr ""
+
+#. translators: %s is the cart ID
+#: includes/admin-page.php:900
+#, php-format
+msgid "Cart #%s"
+msgstr ""
+
+#: includes/admin-page.php:913
+msgid "Created at"
+msgstr ""
+
+#: includes/admin-page.php:921
+msgid "Last seen"
+msgstr ""
+
+#: includes/admin-page.php:961
+msgid "Order"
+msgstr ""
+
+#: includes/admin-page.php:972
+msgid "Recovery URL"
+msgstr ""
+
+#: includes/admin-page.php:985
+msgid "Guest/Unknown"
+msgstr ""
+
+#: includes/admin-page.php:1001
+msgid "IP address"
+msgstr ""
+
+#: includes/admin-page.php:1011
+msgid "Cart coupon(s)"
+msgstr ""
+
+#: includes/admin-page.php:1027
+msgid "List items"
+msgstr ""
+
+#: includes/admin-page.php:1027
+msgid "Cart items"
+msgstr ""
+
+#: includes/admin-page.php:1038
+msgid "Item Name"
+msgstr ""
+
+#: includes/admin-page.php:1039
+msgid "Quantity"
+msgstr ""
+
+#: includes/admin-page.php:1040
+msgid "Line Total"
+msgstr ""
+
+#: includes/admin-page.php:1060
+msgid "Unknown item"
+msgstr ""
+
+#. translators: %d = number of revisions
+#: includes/admin-page.php:1168
+#, php-format
+msgid "History (%d revision)"
+msgid_plural "History (%d revisions)"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %1$s = product name, %2$d = quantity
+#: includes/admin-page.php:1181
+#, php-format
+msgid "Added \"%1$s\" x %2$d"
+msgstr ""
+
+#: includes/admin-page.php:1182
+#: includes/admin-page.php:1190
+#: includes/admin-page.php:1197
+msgid "(unknown product)"
+msgstr ""
+
+#. translators: %s = product name
+#: includes/admin-page.php:1189
+#, php-format
+msgid "Removed \"%s\""
+msgstr ""
+
+#. translators: %1$s = product name, %2$d = old quantity, %3$d = new quantity
+#: includes/admin-page.php:1196
+#, php-format
+msgid "Changed quantity of \"%1$s\" from %2$d to %3$d"
+msgstr ""
+
+#: includes/admin-page.php:1207
+msgid "Recovery email triggered"
+msgstr ""
+
+#. translators: %s is email title, possibly linked
+#: includes/admin-page.php:1211
+#, php-format
+msgid "Recovery email triggered: %s"
+msgstr ""
+
+#: includes/admin-page.php:1259
+msgid "Previous list"
+msgstr ""
+
+#: includes/admin-page.php:1260
+msgid "Previous cart"
+msgstr ""
+
+#: includes/admin-page.php:1262
+msgid "Next list"
+msgstr ""
+
+#: includes/admin-page.php:1263
+msgid "Next cart"
+msgstr ""
+
+#: includes/admin-page.php:1265
+msgid "List navigation"
+msgstr ""
+
+#: includes/admin-page.php:1266
+msgid "Cart navigation"
+msgstr ""
+
+#. translators: %s: number of lists
+#: includes/admin-page.php:1302
+#, php-format
+msgid "%s list moved to the Trash. If a user associated with one of these lists accesses the site again, the list will be automatically restored from the Trash."
+msgid_plural "%s lists moved to the Trash. If a user associated with one of these lists accesses the site again, the list will be automatically restored from the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of carts
+#: includes/admin-page.php:1312
+#, php-format
+msgid "%s cart moved to the Trash. If one of these carts are seen again, it will be automatically restored from the Trash."
+msgid_plural "%s carts moved to the Trash. If one of these carts are seen again, it will be automatically restored from the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of lists
+#: includes/admin-page.php:1329
+#, php-format
+msgid "%s list restored from the Trash."
+msgid_plural "%s lists restored from the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of carts
+#: includes/admin-page.php:1334
+#, php-format
+msgid "%s cart restored from the Trash."
+msgid_plural "%s carts restored from the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of lists
+#: includes/admin-page.php:1346
+#, php-format
+msgid "%s list permanently deleted."
+msgid_plural "%s lists permanently deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of carts
+#: includes/admin-page.php:1351
+#, php-format
+msgid "%s cart permanently deleted."
+msgid_plural "%s carts permanently deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin-page.php:1374
+msgid "Move list to Trash"
+msgstr ""
+
+#: includes/admin-page.php:1375
+msgid "Move cart to Trash"
+msgstr ""
+
+#: includes/admin-page.php:1400
+msgid "Restore list"
+msgstr ""
+
+#: includes/admin-page.php:1401
+msgid "Restore cart"
+msgstr ""
+
+#: includes/admin-page.php:1422
+msgid "Delete list permanently"
+msgstr ""
+
+#: includes/admin-page.php:1423
+msgid "Delete cart permanently"
+msgstr ""
+
+#: includes/admin-page.php:1425
+msgid "You are about to permanently delete this list. This action cannot be undone."
+msgstr ""
+
+#: includes/admin-page.php:1426
+msgid "You are about to permanently delete this cart. This action cannot be undone."
+msgstr ""
+
+#. translators: %d = customer ID
+#: includes/admin-page.php:1534
+#, php-format
+msgid "customer #%d"
+msgstr ""
+
+#. translators: %s = customer name or email
+#: includes/admin-page.php:1582
+#, php-format
+msgid "Recent activity from %s"
+msgstr ""
+
+#: includes/admin-page.php:1587
+msgid "No other activity found for this customer."
+msgstr ""
+
+#: includes/admin-page.php:1593
+msgid "Order / Cart"
+msgstr ""
+
+#: includes/admin-page.php:1595
+msgid "Date / Last Seen"
+msgstr ""
+
+#: includes/admin-page.php:1596
+msgid "Total"
+msgstr ""
+
+#: includes/admin-page.php:1663
+#: includes/recovery-emails.php:44
+msgid "Recovery Emails"
+msgstr ""
+
+#: includes/admin-page.php:1664
+#: includes/recovery-emails-admin-page.php:156
+msgid "Beta"
+msgstr ""
+
+#: includes/admin-page.php:1672
+#: live-carts-for-woocommerce.php:170
+msgid "Settings"
+msgstr ""
+
+#: includes/admin-page.php:1694
+msgid "Analytics"
+msgstr ""
+
+#: includes/admin-page.php:1705
+msgid "Addons"
+msgstr ""
+
+#: includes/admin-page.php:1724
+msgid "Live Carts For WooCommerce"
+msgstr ""
+
+#: includes/admin-page.php:1740
+msgid "Upgrade to Live Carts Pro to edit cart contents, create recovery URLs, and convert carts to orders with one click."
+msgstr ""
+
+#: includes/admin-page.php:1742
+msgid "Upgrade"
+msgstr ""
+
+#: includes/analytics.php:15
+msgid "Carts"
+msgstr ""
+
+#: includes/api/class-helpers.php:27
+msgid "No cart/list found with that ID."
+msgstr ""
+
+#: includes/api/class-helpers.php:165
+msgid "Unknown product"
+msgstr ""
+
+#: includes/api/class-rest-controller-base.php:57
+msgid "The page number requested is larger than the number of pages available."
+msgstr ""
+
+#: includes/api/class-rest-controller-base.php:74
+msgid "Could not retrieve data."
+msgstr ""
+
+#: includes/api/class-rest-controller-base.php:90
+msgid "Could not retrieve the item."
+msgstr ""
+
+#: includes/api/class-rest-controller-base.php:97
+msgid "Sorry, you are not allowed to access Live Carts data."
+msgstr ""
+
+#: includes/api/class-rest-controller-base.php:184
+msgid "Current page of the collection."
+msgstr ""
+
+#: includes/api/class-rest-controller-base.php:190
+msgid "Maximum number of items to return per page."
+msgstr ""
+
+#: includes/api/class-rest-controller-base.php:197
+msgid "Limit results to carts/lists belonging to these user IDs."
+msgstr ""
+
+#: includes/api/class-rest-controller-base.php:202
+msgid "Limit results to this status: active, converted, abandoned, or trash."
+msgstr ""
+
+#: includes/api/class-rest-controller-base.php:207
+msgid "Limit results to those created after this ISO8601 date."
+msgstr ""
+
+#: includes/api/class-rest-controller-base.php:212
+msgid "Limit results to those created before this ISO8601 date."
+msgstr ""
+
+#: includes/api/class-webhooks.php:33
+msgid "Cart created"
+msgstr ""
+
+#: includes/api/class-webhooks.php:34
+msgid "Cart seen"
+msgstr ""
+
+#: includes/api/class-webhooks.php:35
+msgid "Cart item(s) added"
+msgstr ""
+
+#: includes/api/class-webhooks.php:36
+msgid "Cart item(s) removed"
+msgstr ""
+
+#: includes/api/class-webhooks.php:37
+msgid "Cart item(s) quantity changed"
+msgstr ""
+
+#: includes/api/class-webhooks.php:38
+msgid "Cart converted to order"
+msgstr ""
+
+#: includes/api/class-webhooks.php:39
+msgid "Cart abandoned"
+msgstr ""
+
+#: includes/api/class-webhooks.php:40
+msgid "Shopper list created"
+msgstr ""
+
+#: includes/api/class-webhooks.php:41
+msgid "Shopper list seen"
+msgstr ""
+
+#: includes/api/class-webhooks.php:42
+msgid "Shopper list item(s) added"
+msgstr ""
+
+#: includes/api/class-webhooks.php:43
+msgid "Shopper list item(s) removed"
+msgstr ""
+
+#: includes/api/class-webhooks.php:44
+msgid "Shopper list item(s) quantity changed"
+msgstr ""
+
+#: includes/api/class-webhooks.php:342
+msgid "Webhooks"
+msgstr ""
+
+#: includes/api/class-webhooks.php:347
+msgid "The webhook was not added: please enter a valid URL. Localhost and private-network addresses are rejected."
+msgstr ""
+
+#: includes/api/class-webhooks.php:347
+msgid "The webhook was not added: select at least one event."
+msgstr ""
+
+#: includes/api/class-webhooks.php:351
+msgid "Register one or more URLs to receive a signed JSON POST request whenever a subscribed event happens."
+msgstr ""
+
+#: includes/api/class-webhooks.php:360
+msgid "URL"
+msgstr ""
+
+#: includes/api/class-webhooks.php:361
+#: includes/api/class-webhooks.php:440
+msgid "Events"
+msgstr ""
+
+#: includes/api/class-webhooks.php:363
+#: includes/recovery-emails-admin-page.php:182
+msgid "Actions"
+msgstr ""
+
+#: includes/api/class-webhooks.php:384
+msgid "Secret (shown once):"
+msgstr ""
+
+#: includes/api/class-webhooks.php:398
+msgid "Disabled"
+msgstr ""
+
+#: includes/api/class-webhooks.php:398
+#: includes/recovery-emails-admin-page.php:204
+#: includes/recovery-emails-admin-page.php:347
+#: live-carts-for-woocommerce.php:722
+msgid "Active"
+msgstr ""
+
+#: includes/api/class-webhooks.php:404
+msgid "Disable"
+msgstr ""
+
+#: includes/api/class-webhooks.php:404
+msgid "Enable"
+msgstr ""
+
+#: includes/api/class-webhooks.php:408
+#: includes/api/class-webhooks.php:411
+msgid "More options"
+msgstr ""
+
+#: includes/api/class-webhooks.php:414
+msgid "Regenerate Secret"
+msgstr ""
+
+#: includes/api/class-webhooks.php:417
+msgid "Delete this webhook?"
+msgstr ""
+
+#: includes/api/class-webhooks.php:418
+#: includes/recovery-emails-admin-page.php:214
+msgid "Delete"
+msgstr ""
+
+#: includes/api/class-webhooks.php:432
+msgid "Add Webhook"
+msgstr ""
+
+#: includes/api/class-webhooks.php:436
+msgid "Webhook URL"
+msgstr ""
+
+#: includes/api/class-webhooks.php:451
+msgid "Save Webhook"
+msgstr ""
+
+#: includes/api/class-webhooks.php:454
+msgid "Cancel"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:25
+msgid "BerryPress Plugins"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:27
+msgid "Discover our collection of powerful WordPress plugins designed to enhance your website functionality!"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:41
+msgid "Track active, abandoned, and converted carts live."
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:42
+#: includes/berrypress-admin-framework/addons-page.php:54
+#: includes/berrypress-admin-framework/addons-page.php:66
+#: includes/berrypress-admin-framework/addons-page.php:78
+#: includes/berrypress-admin-framework/addons-page.php:90
+#: includes/berrypress-admin-framework/addons-page.php:102
+#: includes/berrypress-admin-framework/addons-page.php:114
+#: includes/berrypress-admin-framework/addons-page.php:126
+#: includes/berrypress-admin-framework/addons-page.php:138
+#: includes/berrypress-admin-framework/addons-page.php:150
+#: includes/berrypress-admin-framework/addons-page.php:162
+msgid "View Product"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:50
+#: includes/berrypress-admin-framework/addons-page.php:52
+msgid "Automatic Product Categories"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:53
+msgid "Automatically assign WooCommerce categories and tags with powerful rules, conditions, and triggers."
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:62
+#: includes/berrypress-admin-framework/addons-page.php:64
+msgid "Ninjalytics"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:65
+msgid "Report, analyze, and visualize your store's data to gain actionable insights for growth, support operations, and satisfy customers!"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:74
+#: includes/berrypress-admin-framework/addons-page.php:76
+msgid "Image Upload for bbPress Pro"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:77
+msgid "Upload inline images to bbPress forum topics and replies."
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:86
+#: includes/berrypress-admin-framework/addons-page.php:88
+msgid "S3 Image Storage for bbPress"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:89
+msgid "Works with the Image Upload for bbPress Pro plugin to store images on Amazon S3, reducing storage and bandwidth usage."
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:98
+#: includes/berrypress-admin-framework/addons-page.php:100
+msgid "Photoberry Studio"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:101
+msgid "Image selection, proofing, watermarking, and client management."
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:110
+#: includes/berrypress-admin-framework/addons-page.php:112
+msgid "Product Sales Report for WooCommerce"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:113
+msgid "View and download sales data for individual products."
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:122
+#: includes/berrypress-admin-framework/addons-page.php:124
+msgid "Export Order Items for WooCommerce"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:125
+msgid "Export details of order product line items."
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:134
+#: includes/berrypress-admin-framework/addons-page.php:136
+msgid "Export Order Items Pro"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:137
+msgid "Advanced export functionality for order items with enhanced features and customization options."
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:146
+#: includes/berrypress-admin-framework/addons-page.php:148
+msgid "Customer Address Change Notification"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:149
+msgid "Notify admins instantly whenever a customer address is added or edited."
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:158
+#: includes/berrypress-admin-framework/addons-page.php:160
+msgid "REST API Explorer"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:161
+msgid "Browse and test WordPress REST API endpoints directly from your dashboard."
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:167
+msgid "Find our complete collection on Berrypress"
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:168
+msgid "See everything we’ve built for WordPress on Berrypress and unlock even more ways to power up your website."
+msgstr ""
+
+#: includes/berrypress-admin-framework/addons-page.php:170
+msgid "View All Plugins"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:29
+#: includes/berrypress-admin-framework/Page.php:161
+msgid "Documentation"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:66
+msgid "Our Black Friday sale is live!"
+msgstr ""
+
+#. translators: %s is the product name
+#: includes/berrypress-admin-framework/Page.php:69
+#, php-format
+msgid "Get %s 25%% OFF — plus discounts on all BerryPress products! "
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:73
+msgid "Get 25% OFF Now"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:121
+msgid "Logo"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:137
+msgid "Menu"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:157
+msgid "External Links"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:159
+msgid "BerryPress Website"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:160
+msgid "Leave a Review"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:162
+#: live-carts-for-woocommerce.php:180
+msgid "Support"
+msgstr ""
+
+#. translators: %s is the name of the Pro version (e.g., 'Pro')
+#: includes/berrypress-admin-framework/Page.php:172
+#, php-format
+msgid "Upgrade to <strong>%s</strong>"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:176
+msgid "Edit Cart Contents"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:177
+msgid "Create Recovery URLs"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:178
+msgid "Convert Carts To Orders"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:180
+msgid "...plus new features added regularly!"
+msgstr ""
+
+#: includes/berrypress-admin-framework/Page.php:184
+msgid "View Plans"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:30
+msgid "You do not have permission to create emails."
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:34
+msgid "You do not have permission to edit this email."
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:38
+#: includes/recovery-emails-admin-page.php:101
+#: includes/recovery-emails-admin-page.php:266
+msgid "Invalid email ID."
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:49
+msgid "Email subject is required."
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:87
+msgid "Error saving recovery email. Please try again."
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:106
+msgid "You do not have permission to delete this email."
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:122
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:155
+msgid "Cart Recovery Emails"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:160
+msgid "Add New Email"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:167
+msgid "No recovery emails yet"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:168
+msgid "Create your first recovery email to start recovering abandoned carts automatically."
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:171
+msgid "Create First Recovery Email"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:179
+msgid "Email Subject"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:180
+msgid "Send After"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:197
+msgid "(No subject)"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:206
+#: includes/recovery-emails-admin-page.php:346
+msgid "Draft"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:211
+msgid "Edit"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:213
+msgid "Are you sure you want to delete this recovery email?"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:225
+msgid "Recommended Email Sequence"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:228
+msgid "Email 1: Send after 1 hour with 0% discount (gentle reminder)"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:229
+msgid "Email 2: Send after 24 hours with 5-10% discount (incentive)"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:230
+msgid "Email 3: Send after 3 days with 10-15% discount (last chance)"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:283
+msgid "Recovery email saved successfully!"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:290
+msgid "Add New Recovery Email"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:290
+msgid "Edit Recovery Email"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:305
+msgid "Subject"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:312
+msgid "e.g., [first_name], you forgot something in your cart!"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:319
+msgid "Customer's first name (if known)"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:320
+msgid "Formatted list of cart items"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:321
+msgid "Cart recovery URL"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:322
+msgid "Generated coupon code (if discount is set) [PRO]"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:335
+msgid "Use shortcodes from the editor toolbar to personalize."
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:336
+msgid "Documentation →"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:349
+msgid "Send after"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:361
+msgid "Minutes"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:362
+msgid "Hours"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:363
+msgid "Days"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:366
+msgid "after cart was last seen"
+msgstr ""
+
+#: includes/recovery-emails-admin-page.php:368
+msgid "Exact email send time may vary depending on when hourly scheduled tasks (cron) are triggered in WordPress."
+msgstr ""
+
+#: includes/recovery-emails.php:84
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/recovery-emails.php:85
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/recovery-emails.php:86
+msgid "day"
+msgid_plural "days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/recovery-emails.php:306
+msgid "Customer"
+msgstr ""
+
+#: includes/recovery-emails.php:360
+msgid "Quantity:"
+msgstr ""
+
+#: includes/review-request.php:274
+msgid "Thanks for the feedback!"
+msgstr ""
+
+#. translators: %s = product name
+#: includes/review-request.php:278
+#, php-format
+msgid "Would you mind sharing your experience by leaving a review? It helps other potential users decide if %s is right for them."
+msgstr ""
+
+#: includes/review-request.php:290
+msgid "Leave a review"
+msgstr ""
+
+#: includes/review-request.php:291
+msgid "I already left a review"
+msgstr ""
+
+#: includes/review-request.php:293
+#: includes/review-request.php:311
+#: includes/review-request.php:340
+msgid "Don't ask again"
+msgstr ""
+
+#: includes/review-request.php:297
+msgid "Thanks for letting us know."
+msgstr ""
+
+#: includes/review-request.php:298
+msgid "We're here to help - please reach out and we'll do our best to improve your experience."
+msgstr ""
+
+#: includes/review-request.php:307
+msgid "Contact support"
+msgstr ""
+
+#: includes/review-request.php:309
+msgid "Maybe later"
+msgstr ""
+
+#. translators: %s = product name
+#: includes/review-request.php:319
+#, php-format
+msgid "How would you rate %s?"
+msgstr ""
+
+#: includes/review-request.php:323
+msgid "Your feedback helps us improve - and helps other store owners find the right tools."
+msgstr ""
+
+#: includes/review-request.php:324
+msgid "Rating from 1 to 5 stars"
+msgstr ""
+
+#. translators: %d: star rating 1–5
+#: includes/review-request.php:329
+#, php-format
+msgid "%d out of 5"
+msgstr ""
+
+#. translators: %d: star rating 1–5
+#: includes/review-request.php:330
+#, php-format
+msgid "Rate %d out of 5 stars"
+msgstr ""
+
+#: includes/review-request.php:336
+msgid "Remind me in 1 week"
+msgstr ""
+
+#: includes/review-request.php:338
+msgid "Remind me in 1 month"
+msgstr ""
+
+#: includes/review-request.php:345
+#: live-carts-for-woocommerce.php:390
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/shopper-lists.php:50
+msgid "Wishlist"
+msgstr ""
+
+#: includes/shopper-lists.php:51
+msgid "Saved for Later"
+msgstr ""
+
+#: includes/shopper-lists.php:355
+msgid "Shopper list record could not be created"
+msgstr ""
+
+#: includes/stats-controller.php:14
+msgid "Stats about carts."
+msgstr ""
+
+#: includes/stats-controller.php:74
+msgid "Cart conversion rate"
+msgstr ""
+
+#: includes/stats-controller.php:80
+msgid "Cart abandonment rate"
+msgstr ""
+
+#: includes/stats-controller.php:86
+msgid "Average cart value"
+msgstr ""
+
+#: includes/visitor-email.php:167
+msgid "Invalid email address"
+msgstr ""
+
+#: live-carts-for-woocommerce.php:179
+msgid "Changelog"
+msgstr ""
+
+#: live-carts-for-woocommerce.php:181
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: live-carts-for-woocommerce.php:214
+msgid "Cart ID:"
+msgstr ""
+
+#: live-carts-for-woocommerce.php:467
+msgid "No debug log found."
+msgstr ""
+
+#: live-carts-for-woocommerce.php:510
+msgid "The migration did not complete due to an unknown error."
+msgstr ""
+
+#: live-carts-for-woocommerce.php:717
+msgid "Live Carts for WooCommerce"
+msgstr ""
+
+#: live-carts-for-woocommerce.php:723
+msgid "Converted"
+msgstr ""
+
+#: live-carts-for-woocommerce.php:724
+msgid "Abandoned"
+msgstr ""
+
+#: live-carts-for-woocommerce.php:1107
+msgid "Cart could not be created"
+msgstr ""
+
+#: live-carts-for-woocommerce.php:1163
+msgid "Cart seen could not be updated"
+msgstr ""
+
+#: live-carts-for-woocommerce.php:1221
+msgid "Cart could not be updated"
+msgstr ""
+
+#: live-carts-for-woocommerce.php:1437
+#: live-carts-for-woocommerce.php:1478
+msgid "Cart contents could not be created"
+msgstr ""
